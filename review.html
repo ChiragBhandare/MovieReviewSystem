@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fun.js"></script>
+    <style>
+        body {
+            color: antiquewhite;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: 200;
+        }
+
+        h1 {
+            font-family: cursive;
+            font-size: 200;
+            font-size: 3rem;
+            color: #2bcc6e;
+        }
+
+        .main {
+            display:grid;
+            grid-template-columns: repeat(3 , 1fr);
+
+        }
+
+        .cont-1 {
+            display: grid;
+            width: 600px;
+            height: 750px;
+            border: 2px solid rgb(7, 10, 7);
+            border-radius: 14px;
+            margin: 15px;
+            background: #191919;
+            
+
+
+        }
+
+        .cont-1 img {
+            width: 200px;
+            margin: 10px 200px;
+
+        }
+
+        .container {
+            margin: 10px 200px;
+
+
+        }
+
+        .cont-1 p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 8px auto;
+            color: rgb(209, 214, 200);
+        }
+
+        input[type=textarea],
+        input[type=text] {
+            border: 0;
+            background: none;
+            display: block;
+            width: 200px;
+            padding: 8px 10px;
+            margin: 0px auto;
+            text-align: center;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            border: 2px solid green;
+
+        }
+
+        button {
+            border: 0;
+            background: none;
+            display: block;
+            padding: 15px;
+            margin: 12px auto;
+            text-align: center;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            border: 2px solid #2bcc6e;
+
+        }
+
+        button:hover {
+            opacity: 0.8;
+            background-color: #2bcc6e;
+            }
+
+         .cont-2 button{
+            border: 0;
+            background: none;
+            display: block;
+            padding: 15px 60px;
+            margin: 12px auto;
+            text-align: center;
+            outline: none;
+            color: rgb(238, 221, 221);
+            border-radius: 24px;
+            border: 2px solid #2bcc6e;
+            background-color: #191919;
+
+
+         }   
+
+        .cont-2 button a{
+            text-decoration: none;
+            color: aliceblue;
+            
+        } 
+
+       
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1> MOVIES LIST</h1>
+    </center>
+
+    <div class="main">
+
+        <div class="cont-1">
+            <p>RAB NE BANA DI JODI</p>
+            <div class="img1">
+                <img src="img1.jpg" alt="">
+
+                <div class="container">
+                    comment: <input type="textarea" name="uname" id="uname"><br>
+                    rating: <input type="text" name="rating" id="rating" placeholder="excellent/good/average"><br>
+                    comment: <span id="span"></span><br>
+                    Rating: <span id="span1"></span><br>
+                    <button type="button" value="submit" onclick="print()">print</button>
+                   </div>
+
+
+                </Div>
+
+            </div>
+
+            <div class="cont-1">
+                <p>MUNNA MICHAEL</p>
+                <div class="img1">
+                    <img src="img3.jpg" alt="">
+                </div>
+                <div class="container">
+                    comment: <input type="textarea" name="uname" id="uname1"><br>
+                    rating: <input type="text" name="rating" id="rating1" placeholder="excellent/good/average"><br>
+                    comment: <span id="span2"></span><br>
+                    Rating: <span id="span3"></span><br>
+                    <button type="button" value="submit" onclick="print1()">print</button>
+                    
+                </Div>
+
+            </div>
+
+            <div class="cont-1">
+                <p>R A E E S</p>
+                <div class="img1">
+                    <img src="img4.jpg" alt="">
+                </div>
+                <div class="container">
+                    comment: <input type="textarea" name="uname" id="uname2"><br>
+                    rating: <input type="text" name="rating" id="rating2" placeholder="excellent/good/average"><br>
+                    comment: <span id="span4"></span><br>
+                    Rating: <span id="span5"></span><br>
+                    <button type="button" value="submit" onclick="print2()">print</button>
+                    
+                </Div>
+            </div>
+
+            <div class="cont-1">
+                <p>B A R F i</p>
+                <div class="img1">
+                    <img src="img5.jpg" alt="">
+                </div>
+                <div class="container">
+                    comment: <input type="textarea" name="uname" id="uname3"><br>
+                    rating: <input type="text" name="rating" id="rating3" placeholder="excellent/good/average"><br>
+                    comment: <span id="span6"></span><br>
+                    Rating: <span id="span7"></span><br>
+                    <button type="button" value="submit" onclick="print3()">print</button>
+                   
+                </Div>
+            </div>
+
+            <div class="cont-1">
+                <p>Z E R O</p>
+                <div class="img1">
+                    <img src="img6.jpg" alt="">
+                </div>
+                <div class="container">
+                    comment: <input type="textarea" name="uname" id="uname4"><br>
+                    rating: <input type="text" name="rating" id="rating4" placeholder="excellent/good/average"><br>
+                    comment:<span id="span8"></span><br>
+                    Rating: <span id="span9"></span><br>
+                    <button type="button" value="submit" onclick="print4()">print</button>
+                    
+                </Div>
+
+            </div>
+
+            <div class="cont-1">
+                <p>SINGHAM</p>
+                <div class="img1">
+                    <img src="img7.jpg" alt="">
+                </div>
+                <div class="container">
+                    comment: <input type="textarea" name="uname" id="uname5"><br>
+                    rating: <input type="text" name="rating" id="rating5" placeholder="excellent/good/average"><br>
+                    comment: <span id="span10"></span><br>
+                    Rating: <span id="span11"></span><br>
+                    <button type="button" value="submit" onclick="print5()">print</button>
+                   
+                </Div>
+
+            </div>
+
+            <div class="cont-1">
+                <p>NOTEBOOK</p>
+                <div class="img1">
+                    <img src="img8.jpg" alt="">
+                </div>
+                <div class="container">
+                    comment: <input type="textarea" name="uname" id="uname6"><br>
+                    rating: <input type="text" name="rating" id="rating6" placeholder="excellent/good/average"><br>
+                    comment: <span id="span12"></span><br>
+                    Rating: <span id="span13"></span><br>
+                    <button type="button" value="submit" onclick="print6()">print</button>
+                   
+                </Div>
+
+            </div>
+
+            <div class="cont-1">
+                <p>P A N G A</p>
+                <div class="img1">
+                    <img src="img9.jpg" alt="">
+                </div>
+                <div class="container">
+                    comment: <input type="textarea" name="uname" id="uname7"><br>
+                    rating: <input type="text" name="rating" id="rating7" placeholder="excellent/good/average"><br>
+                    comment: <span id="span14"></span><br>
+                    Rating: <span id="span15"></span><br>
+                    <button type="button" value="submit" onclick="print7()">print</button>
+                    
+                </Div>
+
+            </div>
+
+            <div class="cont-1">
+                <p>GULLY BOY</p>
+                <div class="img1">
+                    <img src="img10.jpg" alt="">
+                </div>
+                <div class="container">
+                    comment: <input type="textarea" name="uname" id="uname8"><br>
+                    rating: <input type="text" name="rating" id="rating8" placeholder="excellent/good/average"><br>
+                    name: <span id="span16"></span><br>
+                    Rating: <span id="span17"></span><br>
+                    <button type="button" value="submit" onclick="print8()">print</button>
+                    
+                </Div>
+
+            </div>
+
+            <div class="cont-1">
+                <p>CHAK DE INDIA</p>
+                <div class="img1">
+                    <img src="img11.jpg" alt="">
+                </div>
+                <div class="container">
+                    comment: <input type="textarea" name="uname" id="uname9"><br>
+                    rating: <input type="text" name="rating" id="rating9" placeholder="excellent/good/average"><br>
+                    comment: <span id="span18"></span><br>
+                    Rating: <span id="span19"></span><br>
+                    <button type="button" value="submit" onclick="print9()">print</button>
+                    
+                </Div>
+
+            </div>
+
+
+            
+
+        </div>
+
+        <div class="cont-2">
+            <button onclick="location.reload()">Clear</button>
+            <button><a href="index.html">Logout</a></button>
+        </div>
+</body>
+
+</html>
